@@ -1,7 +1,8 @@
 FROM alpine:latest
 
 LABEL maintainer="patatje-eu" \
-      org.label-schema.name="cyberchef-patatje-docker"
+      org.label-schema.name="cyberchef-patatje-docker" \
+      org.opencontainers.image.source="https://github.com/patatje-eu/cyberchef"
 
 RUN apk add --no-cache \
     git \
@@ -19,6 +20,6 @@ RUN rm /etc/nginx/http.d/default.conf
 WORKDIR /CyberChef
 RUN npm install
 
-EXPOSE 8080
+EXPOSE 8000/tcp
 
 CMD nginx && npm start
