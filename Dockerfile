@@ -1,6 +1,7 @@
 FROM alpine:latest
 
-LABEL org.labe-schema.name="cyberchef"
+LABEL maintainer="patatje-eu" \
+      org.label-schema.name="cyberchef-patatje-docker"
 
 RUN apk add --no-cache \
     git \
