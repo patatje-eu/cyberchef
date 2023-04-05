@@ -1,3 +1,5 @@
+[![build](https://github.com/patatje-eu/cyberchef/actions/workflows/build.yml/badge.svg)](https://github.com/patatje-eu/cyberchef/actions/workflows/build.yml)
+
 # cyberchef
 cyberchef docker build
 
